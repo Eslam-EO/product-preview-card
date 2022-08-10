@@ -1,0 +1,184 @@
+/* Start Global Values */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Fraunces", serif;
+  font-family: "Montserrat", sans-serif;
+  background-color: #f3eae3ff;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+/** Small **/
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/** Medium **/
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/** Large **/
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* End Global Values */
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    width: 375px;
+    margin: 20px auto;
+  }
+}
+.card {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
+  background-color: white;
+  border-radius: 3%;
+}
+@media (max-width: 767px) {
+  .card {
+    width: 375px;
+    grid-template-columns: repeat(1, minmax(375px, 1fr));
+  }
+}
+.card .image {
+  height: 400px;
+  width: 300px;
+}
+.card .image img.desktop {
+  width: 300px;
+  border-top-left-radius: 3%;
+  border-bottom-left-radius: 3%;
+}
+.card .image img.mobile {
+  display: none;
+}
+@media (max-width: 767px) {
+  .card .image {
+    width: 375px;
+    height: 262.383px;
+  }
+  .card .image img.desktop {
+    display: none;
+  }
+  .card .image img.mobile {
+    position: relative;
+    top: 0;
+    display: block;
+    width: 375px;
+    border-top-left-radius: 3%;
+    border-top-right-radius: 3%;
+  }
+}
+.card .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 300px;
+  height: 450px;
+  padding: 30px;
+}
+@media (max-width: 767px) {
+  .card .text {
+    width: 375px;
+    padding: 15px;
+    height: 350px;
+  }
+}
+
+.card .text .txt-content h2 {
+  font-family: "Fraunces", serif;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 20px 0;
+  color: #282c35ff;
+}
+@media (max-width: 767px) {
+  .card .text .txt-content h2 {
+    margin: 10px;
+    line-height: 1;
+  }
+}
+.card .text .txt-content p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #8d9099ff;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+@media (max-width: 767px) {
+  .card .text .txt-content p {
+    margin: 10px;
+  }
+}
+.card .text .txt-content p.top {
+  letter-spacing: 4px;
+}
+.card .text .price {
+  font-family: "Fraunces", serif;
+  color: #3d8168ff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 40px;
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .card .text .price {
+    margin: 10px 120px 10px 0;
+  }
+}
+.card .text .price h2 {
+  font-size: 30px;
+  margin-right: 25px;
+}
+.card .text .price span {
+  font-family: "Montserrat", sans-serif;
+  color: #8d9099;
+  text-decoration-line: line-through;
+}
+.card .text .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 235px;
+  background-color: #3d8168ff;
+  color: white;
+  border-radius: 5%;
+  padding: 15px;
+  margin-right: 10px;
+}
+@media (max-width: 767px) {
+  .card .text .button {
+    width: 330px;
+  }
+}
+.card .text .button:hover {
+  cursor: pointer;
+  background-color: #1a4031ff;
+}
+.card .text .button img {
+  width: 20px;
+}
+.card .text .button p {
+  margin-left: 10px;
+}
