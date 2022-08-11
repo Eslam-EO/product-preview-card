@@ -42,7 +42,7 @@ body {
 @media (max-width: 767px) {
   .container {
     flex-direction: column;
-    width: 375px;
+    width: 90%;
     margin: 20px auto;
   }
 }
@@ -94,20 +94,21 @@ body {
   flex-direction: column;
   width: 300px;
   height: 450px;
-  padding: 30px;
+  padding: 35px;
 }
 @media (max-width: 767px) {
   .card .text {
     width: 375px;
-    padding: 15px;
+    padding: 32px;
     height: 350px;
   }
 }
 
 .card .text .txt-content h2 {
   font-family: "Fraunces", serif;
-  font-size: 30px;
+  font-size: 33px;
   font-weight: 700;
+  line-height: 1;
   margin: 20px 0;
   color: #282c35ff;
 }
@@ -144,7 +145,7 @@ body {
 }
 @media (max-width: 767px) {
   .card .text .price {
-    margin: 10px 120px 10px 0;
+    margin: 5px 100px 10px 0;
   }
 }
 .card .text .price h2 {
@@ -153,6 +154,7 @@ body {
 }
 .card .text .price span {
   font-family: "Montserrat", sans-serif;
+  font-size: 14px;
   color: #8d9099;
   text-decoration-line: line-through;
 }
@@ -160,16 +162,18 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 235px;
+  width: 100%;
   background-color: #3d8168ff;
   color: white;
-  border-radius: 5%;
-  padding: 15px;
+  border-radius: 8px;
+  padding: 13px;
+  margin-top: 10px;
   margin-right: 10px;
 }
 @media (max-width: 767px) {
   .card .text .button {
-    width: 330px;
+    margin-top: 0;
+    width: 291px;
   }
 }
 .card .text .button:hover {
@@ -177,8 +181,9 @@ body {
   background-color: #1a4031ff;
 }
 .card .text .button img {
-  width: 20px;
+  width: 15px;
 }
 .card .text .button p {
+  font-size: 14px;
   margin-left: 10px;
 }
